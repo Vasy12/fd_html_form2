@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FD2020-1. HTML Form2</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<form action="">
+    <input class="invalid" type="text"
+           name="login"
+           required
+           placeholder="login"
+
+           pattern="^\w{4,16}$">
+    <br>
+    <input type="password"
+           name="password"
+           required
+           placeholder="password"
+           pattern="(?=.*[A-Z])(?=.*\d)^\w{8,}$">
+    <br>
+
+    <input required type="radio" id="1" name="test"><label for="1">radio1</label><br><input type="radio" id="2"
+                                                                                            name="test"><label
+        for="2">radio2</label><br><input type="radio" id="3" name="test"><label for="3">radio3</label><br><input
+        type="radio" id="4" name="test"><label for="4">radio4</label><br>
+
+
+    <button type="submit">Login</button>
+</form>
+
+
+</body>
+</html>

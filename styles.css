@@ -1,0 +1,22 @@
+
+input {
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+input:focus {
+    border: 1px solid dodgerblue;
+}
+
+input:invalid, input:invalid + label {
+    border-color: #ff3636;
+    color: #ff3636;
+}
+
+input:valid {
+    border-color: #85d485;
+}
